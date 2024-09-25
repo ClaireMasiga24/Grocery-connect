@@ -1,0 +1,59 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# Logs
+logs
+*.log
+*.log.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# MongoDB
+/data/
+*.lock
+
+# Compiled source
+/dist/
+/build/
+
+# Optional npm cache directory
+.npm
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Environment files
+.env
+.env.test
+.env.production
+
+# Compiled files
+*.out
+*.exe
+*.o
+*.a
+*.so
+
+# Frontend build files
+/public/js/
+/public/css/
+
+# Other files to ignore
+coverage/
+.cache/
+
+# Debugging files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# JetBrains IDE
+.idea/

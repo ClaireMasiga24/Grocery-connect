@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Dashboard - Happy Hoe Grocery Ltd.</title>
+    <link rel="stylesheet" href="../Css/salesAgents.css">
+</head>
+<body>
+
+<header>
+    <div class="main-header">
+        <div class="logo">
+            <img src="../images/OIP (4).jpeg" alt="Company Logo" class="circular-logo">
+        </div>
+        <div class="header-title">
+            <span>Sales Dashboard</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../produceManagement.html">Produce Management</a></li>
+                <li><a href="stock.html">Stock</a></li>
+                <li><a href="/" id="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="sales-dashboard">
+        <h1>Record a Sale</h1>
+
+        <!-- Sales Input Form -->
+        <div class="form-container">
+            <h2>Enter Sale Details</h2>
+            <form id="sales-form">
+                <label for="produce-name">Produce Name:</label>
+                <input type="text" id="produce-name" name="produce-name" required>
+
+                <label for="quantity">Quantity (kg):</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <label for="amount-paid">Amount Paid (UGX):</label>
+                <input type="number" id="amount-paid" name="amount-paid" required>
+
+                <label for="buyer-name">Buyer’s Name:</label>
+                <input type="text" id="buyer-name" name="buyer-name" required>
+
+                <label for="agent-name">Sales Agent’s Name:</label>
+                <input type="text" id="agent-name" name="agent-name" required>
+
+                <label for="sale-date">Date:</label>
+                <input type="date" id="sale-date" name="sale-date" required>
+
+                <label for="sale-time">Time:</label>
+                <input type="time" id="sale-time" name="sale-time" required>
+
+                <button type="submit">Record Sale</button>
+            </form>
+        </div>
+
+        <!-- Sales Records Table -->
+        <h2>Sales Records</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produce Name</th>
+                    <th>Quantity (kg)</th>
+                    <th>Amount Paid (UGX)</th>
+                    <th>Buyer’s Name</th>
+                    <th>Sales Agent’s Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody id="sales-table-body">
+                <!-- Sales rows will be dynamically added here -->
+            </tbody>
+        </table>
+
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Happy Hoe Grocery Ltd. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="../Scripts/salesAgents.js"></script>
+</body>
+</html>

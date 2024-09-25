@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGL Produce Management Dashboard</title>
+    <link rel="stylesheet" href="../Css/producemanagement.css">
+</head>
+<body>
+    <header>
+        <h1>KGL Produce Management Dashboard</h1>
+    </header>
+    <nav>
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn" style="display:none;">Logout</button>
+    </nav>
+    <main>
+        <section id="loginForm" style="display:none;">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="submitLogin">Submit</button>
+        </section>
+        <section id="salesAgentSection" style="display:none;">
+            <h2>Record Produce Entry</h2>
+            <input type="text" id="produceName" placeholder="Produce Name">
+            <input type="number" id="produceQuantity" placeholder="Quantity">
+            <input type="number" id="producePrice" placeholder="Price">
+            <input type="text" id="produceBranch" placeholder="Branch">
+            <button id="submitProduce">Submit Produce</button>
+        </section>
+        <section id="managerSection" style="display:none;">
+            <h2>Record Sale</h2>
+            <select id="produceSelect"></select>
+            <input type="number" id="saleQuantity" placeholder="Quantity">
+            <input type="text" id="saleBranch" placeholder="Branch">
+            <button id="submitSale">Submit Sale</button>
+        </section>
+        <section id="salesAggregation" style="display:none;">
+            <h2>Sales Aggregation</h2>
+            <div id="aggregationResults"></div>
+        </section>
+    </main>
+    <script src="../Scripts/producemanagement.js"></script>
+</body>
+</html>

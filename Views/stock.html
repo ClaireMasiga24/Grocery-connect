@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Dashboard - Real-Time Updates</title>
+    <link rel="stylesheet" href="../Css/stock.css">
+</head>
+<body>
+
+<header>
+    <div class="main-header">
+        <div class="logo">
+            <img src="../images/OIP (4).jpeg" alt="Company Logo" class="circular-logo">
+        </div>
+        <div class="header-title">
+            <span>Real-Time Stock Updates</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../manager.html">Manager Dashboard</a></li>
+                <li><a href="../salesAgents.html">Sales</a></li>
+                <li><a href="/" id="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="stock-dashboard">
+        <h1>Stock Management</h1>
+
+        <!-- Stock Input Form -->
+        <div class="form-container">
+            <h2>Add New Stock</h2>
+            <form id="stock-form">
+                <label for="produce-name">Produce Name:</label>
+                <input type="text" id="produce-name" name="produce-name" required>
+
+                <label for="stock-quantity">Quantity (kg):</label>
+                <input type="number" id="stock-quantity" name="stock-quantity" required>
+
+                <label for="branch">Branch:</label>
+                <select id="branch" name="branch" required>
+                    <option value="Maganjo">Maganjo</option>
+                    <option value="Matugga">Matugga</option>
+                </select>
+
+                <label for="produce-image">Upload Produce Image:</label>
+                <input type="file" id="produce-image" accept="image/*" required>
+
+                <button type="submit">Add Stock</button>
+            </form>
+        </div>
+
+        <!-- Real-Time Stock Table -->
+        <h2>Current Stock Levels</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Produce Name</th>
+                    <th>Quantity (kg)</th>
+                    <th>Branch</th>
+                </tr>
+            </thead>
+            <tbody id="stock-table-body">
+                <!-- Stock rows will be dynamically added here -->
+            </tbody>
+        </table>
+
+        <!-- Stock Alert Section -->
+        <div id="stock-alert" class="stock-alert"></div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Happy Hoe Grocery Ltd. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="../Scripts/stock.js"></script>
+</body>
+</html>

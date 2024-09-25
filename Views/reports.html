@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - KGL Management</title>
+    <link rel="stylesheet" href="../Css/reports.css">
+</head>
+<body>
+    <header>
+        <h1>KGL Produce Reports</h1>
+        <ul>
+            <li><a href="/" id="logout-button">Logout</a></li>
+        </ul>
+    </header>
+
+    <main id="report-content">
+        <section>
+            <h2>Submit a New Report</h2>
+            <form id="report-form">
+                <label for="reportTitle">Report Title:</label><br>
+                <input type="text" id="reportTitle" name="reportTitle" required><br><br>
+
+                <label for="reportDescription">Report Description:</label><br>
+                <textarea id="reportDescription" name="reportDescription" rows="4" required></textarea><br><br>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Sales and Stock Report</h2>
+            <p>Detailed reports on all produce sales and stock levels in all branches.</p>
+            <!-- Sales report content will be dynamically loaded here -->
+            <div id="salesReport"></div>
+        </section>
+        
+        <section>
+            <h2>Deferred Payments Report</h2>
+            <p>Overview of credit sales and buyers with pending payments.</p>
+            <!-- Deferred payments content will be dynamically loaded here -->
+            <div id="deferredPaymentsReport"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Happy Hoe Grocery Ltd.</p>
+    </footer>
+
+    <script src="../Public/Scripts/reports.js"></script>
+</body>
+</html>

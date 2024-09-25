@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Connect | Happy Hoe Grocery</title>
+  <link rel="stylesheet" href="../Css/login.css">
+</head>
+<body class="firstPage">
+  <header>
+    <h2 id="welcome-heading" style="font-style: italic; color: #2C3E50; font-size: 2em; text-align: center;">
+      Welcome to Grocery Connect<br>
+      <span style="font-size: 1.2em; color: #16A085;">Happy Hoe Grocery Inventory Management</span>
+    </h2>
+  </header>
+
+  <form id="loginForm" class="login-form">
+    <h3 style="text-align: center; color: #2980B9;">Please Input Your Login Details</h3>
+    <div class="row">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    </div>
+    <div class="row">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <input type="checkbox" id="show-password"> Show Password
+    </div>
+    <div class="row">
+      <label for="role">Role:</label>
+      <select id="role" name="role" required>
+        <option value="">Select your role</option>
+        <option value="manager">Manager</option>
+        <option value="sales_agent">Sales Agent</option>
+      </select>
+    </div>
+    <div class="row">
+      <label for="branch">Branch:</label>
+      <select id="branch" name="branch" required>
+        <option value="">Select your branch</option>
+        <option value="maganjo">Maganjo</option>
+        <option value="matugga">Matugga</option>
+      </select>
+    </div>
+    <div class="row">
+      <button id="login-button" type="submit">Login</button>
+    </div>
+    <div class="row">
+      <p><a href="password.html" id="forgot-password-link" style="color: #2980B9;">Forgot Password?</a></p>
+    </div>
+    <div class="row">
+      <p>Don't have an account? <button id="signup-button" type="button">Sign-Up</button></p>
+    </div>
+    <div class="row">
+      <input type="checkbox" id="remember-me" />
+      <label for="remember-me" style="font-size: small;">Stay Logged-in</label>
+    </div>
+  </form>
+
+  <footer>
+    <p id="tagline" style="text-align: center; color: #95A5A6;">&copy; 2024 Grocery Connect - All rights reserved.</p>
+  </footer>
+
+  <script src="../Scripts/login.js"></script>
+</body>
+</html>
